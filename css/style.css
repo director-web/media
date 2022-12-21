@@ -1,0 +1,249 @@
+@import url(./fonts.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --mont: "Montserrat";
+    --primary-color: #96BB7C;
+    --second-color: #737373;
+    --text-color: #252B42;
+}
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body{
+    font-family: var(--mont);
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title{
+    margin-right: 80px;
+}
+
+.header__list{
+    display: flex;
+}
+
+.header__list li{
+    margin-right: 20px;
+    list-style: none;
+}
+
+.header__link{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.header__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__login{
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 45px;
+}
+
+.headr__join{
+    color: white;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.join__icon{
+    color: white;
+    margin-left: 15px;
+}
+
+/* === header Finished === */
+
+
+/* === MAIN STARTS  === */
+
+.main__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main__info-theme{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.main__info-title{
+    width: 542px;
+    color: var(--text-color);
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.main__info-text{
+    width: 496px;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main__btn{
+    color: white;
+    padding: 15px 40px 15px 40px;
+    background: var(--primary-color);
+    transition: .2s linear;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.main__btn:hover{
+    color: var(--primary-color);
+    background: white;
+    border: 1px solid var(--primary-color);
+    transition: .2s linear;
+}
+
+/* === MAIN finished === */
+
+/* === MEIDA === */
+
+
+@media(max-width:1200px){
+    .main__content{
+        flex-direction: column;
+    }
+
+    .main__info{
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 1140px){
+    .header__nav{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media(max-width: 800px){
+    .header__nav{
+        display: block;
+    }
+
+    .header__form{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 680px){
+    .little__girl{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width: 540px){
+    .main__info-title{
+        width: 400px;
+        font-size: 40px;
+    }
+
+    .main__info-text{
+        width: 400px;
+    }
+
+    .header__content{
+        flex-direction: column;
+    }
+
+    .header__list li{
+        margin-top: 15px;
+    }
+
+    .header__title{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .header__list{
+        flex-direction: column;
+    }
+
+    .header__link{
+        text-align: center;
+    }
+}
+
+@media(max-width: 410px){
+    .main__info-title{
+        width: 300px;
+        font-size: 30px;
+    }
+
+    .main__info-text{
+        width: 250px;
+    }
+
+    .little__girl{
+        width: 200px;
+        height: 200px;
+    }
+
+    .main__buttons{
+        flex-direction: column;
+    }
+
+    .main__btn{
+        margin-top: 20px;
+    }
+}
+
+
